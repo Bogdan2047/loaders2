@@ -1,0 +1,147 @@
+body{
+    margin: 0 auto;
+}
+
+.loader-container {
+    display: flex;
+   padding-left: 40%;
+   padding-top: 20%;
+  }
+  
+
+.baseLoader {
+   position: relative;
+   height: 100px;
+   width: 100px;
+   border-radius: 50%;
+   background-color: rgb(82, 149, 250);
+   animation-name: left-scale1;
+   animation-duration: 1s;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease-out;
+   
+  }
+  
+.item2{
+  animation-name: left-scale2;
+  margin-left: -40px;
+}
+
+.item3{
+  animation-name: left-scale3;
+  margin-left: -40px;
+}
+
+.item4{
+  animation-name: left-scale4;
+  margin-left: -40px;
+}
+
+.item5{
+  animation-name: left-scale5;
+  margin-left: -40px;
+}
+
+  @keyframes left-scale5{
+      0%{
+        /* transform: scale(0,0) */
+      }
+      25%{
+        transform: scale(0.25, 0.25);
+      }
+      50% {
+        transform: scale(0.5, 0.5);
+        /* background-color: rgb(152, 184, 255); */
+      }
+      75%{
+        transform: scale(0.75 0.75);
+      }
+      100%{
+        box-shadow:1px  1px 2px grey;
+        /* background-color: white; */
+        opacity: 0.3;
+        transform: scale(1.0, 1.0);
+        transform: 1s ease;
+        
+      }
+  }
+
+  @keyframes left-scale4{
+    0%{
+      transform: scale(0.5, 0.5)
+    }
+    25%{
+      transform: scale(0.5, 0.5);
+      background-color: rgb(152, 184, 255);
+    }
+    50% {
+      transform: scale(0.75 0.75);
+    }
+    75%{
+      transform: scale(1.0, 1.0);
+      opacity: 0.3;
+      transform: 1s ease;
+    }
+    100%{
+      /* transform: scale(0, 0) */
+    }
+}
+
+@keyframes left-scale3{
+    0%{
+      transform: scale(0.5, 0.5);
+      background-color: rgb(152, 184, 255);
+    }
+    25%{
+      transform: scale(0.75 0.75);
+    }
+    50% {
+      transform: scale(1.0, 1.0);
+      opacity: 0.3;
+    }
+    75%{
+      /* transform: scale(0, 0); */
+    }
+    100%{
+      transform: scale(0.5, 0.5)
+    }
+}
+
+@keyframes left-scale2{
+    0%{
+      transform: scale(0.75 0.75)
+    }
+    25%{
+      transform: scale(1.0, 1.0);
+      opacity: 0.3;
+    }
+    50% {
+      /* transform: scale(0, 0); */
+    }
+    75%{
+      transform: scale(0.5, 0.5);
+    }
+    100%{
+      transform: scale(0.5, 0.5);
+      /* background-color: rgb(152, 184, 255); */
+    }
+}
+
+@keyframes left-scale1{
+    0%{
+      transform: scale(1.0, 1.0);
+      opacity: 0.1;
+    }
+    25%{
+      /* transform: scale(0, 0); */
+    }
+    50% {
+      transform: scale(0.5, 0.5);
+    }
+    75%{
+      transform: scale(0.5, 0.5);
+    }
+    100%{
+      transform: scale(0.75, 0.75)
+    }
+}
